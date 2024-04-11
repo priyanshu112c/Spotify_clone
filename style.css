@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    padding: 0.5rem;
+}
+.sidebar{
+    background-color: #000;
+    /* background-color: green; */
+    width: 300px;
+    border-radius: 1rem;
+    /* margin-right: 5px; */
+    padding: 0 0.5rem 0.5rem 0;
+    
+}
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    overflow: auto;
+    color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.music-player{
+    background-color: #000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 2rem;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0.75rem;
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100px;
+}
+a{
+    text-decoration: none;
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    /* display: flex;
+    align-items: center; */
+    padding: 0.5rem 0.75rem;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.nav-option i{
+    font-size: 1.25rem;
+}
+.nav-option a{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: .5rem 0.75rem;
+}
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lib-option img{
+    height: 1.25rem;
+    width: 1.25rem ;
+}
+
+.icons{
+    font-size: 1.25rem;
+    display: flex;
+}
+.icons i{
+    margin-right: 1.25rem;
+    opacity: .7;
+    cursor: pointer;
+}
+.icons i:hover{
+    opacity: 1;
+}
+
+.box{
+    height:9rem;
+    background-color: #232323;
+    border-radius: 1rem;
+    margin: 0.75rem 0 0.75rem 0;
+    padding: 1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.box-p2{
+    font-size: 0.75rem;
+    opacity: 0.9;
+}
+.badge{
+    background-color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #000;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+    cursor: pointer;
+    opacity: 1;
+}
+.badge:hover{
+    opacity: 0.75;
+}
+.box2{
+    height: 12rem;
+}
+.box2 .badge{
+    height: 2.2rem;
+} 
+.sticky{
+    position: sticky;   
+    top: 0;
+}
+.sticky-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.sticky-nav-icons img{
+    width: 2rem;
+    height: 2rem;
+    padding: 5px 5px;
+    margin-left: 1rem;    
+    background-color: #232323;
+    border-radius: 50px;
+    opacity: 0.75;
+    cursor: pointer;
+}
+.sticky-nav-icons img:hover{
+    opacity: 1;
+}
+.sticky-nav-options{
+    display: flex;
+    align-items: center;
+}
+.sticky-nav-options .fa-user{
+    width: 2rem;
+    background-color: #000;
+    height: 2rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.75;
+}
+.sticky-nav-options .fa-user:hover{
+    opacity: 1;
+}
+.sticky-nav-options .nav-item{
+    margin-right: 0.5rem;
+}
+.sticky-nav-options .light-badge{
+    font-size: 0.9rem;
+    height: 2.2rem;
+}
+.sticky-nav-options .dark-badge{
+    background-color: #000;
+    color: #fff;
+    font-size: 0.9rem;
+    height: 2.2rem;
+}
+.sticky-nav-options .dark-badge i{
+    margin-right: 5px;
+    font-size: 0.9rem;
+}
+
+.cards{
+    margin-top: 1rem;
+    padding: 0.5rem 0 0 0.5rem;
+}
+.card{
+    background-color: #232323;
+    width: 200px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 6px;
+}
+.card-title{
+    margin-bottom: 6px;
+}
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 90%;
+    height: 30%;
+    border-top: 2px solid white;
+    opacity: 0.4;
+}
+
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+.album{
+    width: 25%;
+}
+.player{
+    width: 50%;
+}
+.controls{
+    width: 25%;
+}
+.player-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-control-icons{
+    height: 1rem;
+    margin-right: 1.7rem ;
+    opacity: 0.7;
+}
+.player-control-icons:hover{
+    opacity: 1;
+}
+
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar{
+    width: 70%;
+    /* appearance: none; */
+    background-color: transparent;
+    cursor: pointer;
+}
+/* .progress-bar::-webkit-slider-runnable-track{
+     background-color: #ddd;
+     border-radius:100px ;
+     height: 0.2rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none ;
+    height: 1rem ;
+    width: 1rem ;
+    background-color: #1bd760;
+} */
+
+.album{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+.album-img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 5px;
+}
+.heart{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+.heart-side{
+    width: 2rem;
+    height: 2rem;
+}
+.album-heart-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.album-text p{
+    font-size: 0.9rem;
+
+    margin-bottom: 0.3rem;
+}
+.album-text .album-text-light{
+    font-size: 0.7rem;
+    opacity: 0.7;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center ;
+}
+.one{
+    width: 3rem;
+    height: 3rem;
+}
+.two{
+    width: 2rem;
+    height: 2rem;   
+}
+.three{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.four{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.five{
+    width: 2rem;
+    height: 2rem;
+    
+}
+@media (max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+@media (max-width:700px){
+    .sidebar{
+        position: absolute;
+        left: -500px;
+    }
+    .music-player{
+        padding: 0;
+    }
+    .album{
+        width: 40%;
+    }
+    .album-img{
+        width: 3rem;
+        height: 3rem;
+    }
+    .player-control-icons{
+        width: 1rem;
+        height: 1rem;
+    }
+    .playback-bar{
+        width: 90%;
+    }
+    .player{
+        width: 60%;
+    }
+    .controls{
+        display: none;
+    }
+}
